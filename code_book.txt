@@ -1,0 +1,38 @@
+#Getting and Cleaning Data Project
+Doug Yasso
+November 2015
+
+Code Book
+
+This project uses the human activity data collected using Samsung Galaxy S smartphone by researchers
+at UC Irvine for a project called "Smartphone-Based Recognition of Human Activities and Postural Transitions".
+Details of the research and data set are at: [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones]() and referenced in these notes.
+
+
+The final data table has numeric value columns for these variables for each Measure:
+        - Mean of Mean
+        - Mean of Standard Deviation
+        - Mean of Mean Frequency (Mean Frequency is the weighted average of the frequency components)
+
+Parameters of Measures
+        Subject:  numeric IDs for 30 test subjects
+
+        Activity: 6 activities tested:
+                1 WALKING
+                2 WALKING_UPSTAIRS
+                3 WALKING_DOWNSTAIRS
+                4 SITTING
+                5 STANDING
+                6 LAYING
+        
+        Domain: whether the data is a measured in the original Time domain, captured at 50 Hz, or Frequency, after the original time data is filtered to remove noise
+
+        Source: The source of linear acceleration (either Body or Gravity) or the source of angular velocity (this is always Body motion).
+
+        Measure: Linear Acceleration, Linear Acceleration Jerk, Angular Velocity, Angular Velocity Jerk; the Jerk measures are derived in time from the Body Linear Acceleration and Body Angular Velocity.
+
+        Axis: 3D measurement isolated in X, Y or Z axis, or Magnitude for the combination of the three axes
+
+Data Units
+        - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg^2).
+        - The gyroscope angular velocity units are radians/seg.
